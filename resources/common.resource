@@ -29,7 +29,6 @@ Clear Local Storage And Close Browser
 Number Of List Items Should Be
     [Arguments]    ${number}
     ${list_items}=   Get Element Count    ${TODO_LIST_ITEM}
-    Log    ${list_items}
     Should Be True   ${list_items} == ${number}
 
    
