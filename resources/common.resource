@@ -26,9 +26,9 @@ Clear Local Storage And Close Browser
     Clear Local Storage
     Close Browser
 
-Number Of List Item Should Be
+Number Of List Items Should Be
     [Arguments]    ${number}
-    ${list_items}=   Get Element Count    //ul[@class="todo-list"]//li
+    ${list_items}=   Get Element Count    ${TODO_LIST_ITEM}
     Log    ${list_items}
     Should Be True   ${list_items} == ${number}
 
