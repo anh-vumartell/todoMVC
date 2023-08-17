@@ -42,7 +42,7 @@ Add Only One Todo
     [Arguments]    ${todo}
     Add A Todo    ${todo}
 
-Get Todos List Length
+Check Todos List Length
     ${todo_list_length}=    Get Length    ${todos}
     Set Global Variable    ${todo_list_length}
 
@@ -56,9 +56,8 @@ Number Of List Items Should Be
     ${list_items}=   Get Element Count    ${TODO_LIST_ITEM}
     Should Be True   ${list_items} == ${number}
 
-Check One Todo At A Random Index
-    ${index}=    Evaluate    random.randint(1,10)    modules=random
-    Select Checkbox     //ul[@class="todo-list"]//li[${index}]//input[@class="toggle"]
+Check First Todo
+    Select Checkbox     //ul[@class="todo-list"]//li[1]//input[@class="toggle"]
 
 Number Of List Item Should Decrease By One
     ${todos_left}    Evaluate    ${todo_list_length} - 1
