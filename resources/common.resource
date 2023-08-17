@@ -69,4 +69,8 @@ Number Of List Item Should Decrease By One
         Element Text Should Be    ${TODO_COUNT}    ${todos_left} items left
     END
 
+Checked Todo Item At ${position}. Of List Is Removed
+    Page Should Not Contain    //ul[@class="todo-list"]//li[${position}]
+    
+
 
