@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    ../libs/Generators.py
 
 *** Variables ***
 ${BROWSER}    chrome
