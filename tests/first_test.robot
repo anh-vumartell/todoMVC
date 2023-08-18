@@ -25,7 +25,7 @@ Add Todos, Check Items And Verify Number Of Todos Left
     Check 2 Todos
     Number Of Items Left Should Be Total 5 Todos Decrease By 2
 
-Verify A Checked Todo Is Removed
+Add Todos, A Checked Todo Is Removed
     [Tags]    check_todo
     Add A Random Number Of Todos
     Check A Random Todo From List And Checked Todo Is Removed
